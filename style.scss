@@ -1,0 +1,53 @@
+$theme-colors:(
+    "primary":#ff6d6d
+);
+@import "node_modules/bootstrap/scss/bootstrap";
+*{
+    font-family: 'Poppins';
+}
+//Fonts
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-Regular.eot?#iefix') format('embedded-opentype'),  url('fonts/Poppins-Regular.woff') format('woff'), url('fonts/Poppins-Regular.ttf')  format('truetype'), url('fonts/Poppins-Regular.svg#Poppins-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+  font-family: 'Khand-Regular';
+  src: url('fonts/Khand-Regular.eot?#iefix') format('embedded-opentype'),  url('fonts/Khand-Regular.woff') format('woff'), url('fonts/Khand-Regular.ttf')  format('truetype'), url('fonts/Khand-Regular.svg#Khand-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+// mixins
+@mixin bg(){
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+//variables and general classes
+$pt-10:10rem;
+$pb-10:10rem;
+.pt-10{
+    padding-top: $pt-10;
+}
+.pb-10{
+    padding-bottom: $pb-10;
+}
+header{
+    background:url(img/header.png);
+    @include bg();
+    background-attachment: fixed;
+    #try{
+        color:#fff;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    h1{
+        letter-spacing: .2rem;
+        font-weight: lighter;
+        color:#282828;
+    }
+    .w-50{
+        margin: auto;
+    }
+}
