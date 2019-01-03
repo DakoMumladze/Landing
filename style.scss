@@ -33,6 +33,9 @@ $pb-10:10rem;
 .pb-10{
     padding-bottom: $pb-10;
 }
+.col-4{
+    width: calc(100%/3);
+}
 header{
     background:url(img/header.png);
     @include bg();
@@ -49,5 +52,49 @@ header{
     }
     .w-50{
         margin: auto;
+    }
+}
+section{
+    h3{
+        font-size: 1rem;
+    }
+    h2{
+        color:#282828;
+    }
+}
+.design{
+    color: #8a8a8a;
+    .d-flex{
+        background: #ececec;
+    }
+    .left{
+        background:#fff;
+        padding: 10% 15% 0 21%;
+    }
+    .right{
+        width: 100%;
+        position: relative;
+        .triangle{
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 0 20rem 35.7rem;
+            border-color: transparent transparent #fb8686 transparent;
+            position: absolute;
+            bottom: 0;
+            right: 0;                       
+        }
+    }
+}
+.features{
+    background-color:#f6f5f3;
+    background-image: url(img/Pen-holder.png),url(img/Earphones.png),url(img/Coffee-Cup.png);
+    background-position: left,right top,right bottom;
+    background-repeat: no-repeat;
+    h4{
+        font-size: 1.5rem;
+    }
+    .col-4{
+        font-size: .9rem;
     }
 }

@@ -9535,6 +9535,10 @@ h3 {
   padding-bottom: 10rem;
 }
 
+.col-4 {
+  width: calc(100%/3);
+}
+
 header {
   background: url(img/header.png);
   background-repeat: no-repeat;
@@ -9554,6 +9558,51 @@ header h1 {
 }
 header .w-50 {
   margin: auto;
+}
+
+section h3 {
+  font-size: 1rem;
+}
+section h2 {
+  color: #282828;
+}
+
+.design {
+  color: #8a8a8a;
+}
+.design .d-flex {
+  background: #ececec;
+}
+.design .left {
+  background: #fff;
+  padding: 10% 15% 0 21%;
+}
+.design .right {
+  width: 100%;
+  position: relative;
+}
+.design .right .triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 20rem 35.7rem;
+  border-color: transparent transparent #fb8686 transparent;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.features {
+  background-color: #f6f5f3;
+  background-image: url(img/Pen-holder.png), url(img/Earphones.png), url(img/Coffee-Cup.png);
+  background-position: left, right top, right bottom;
+  background-repeat: no-repeat;
+}
+.features h4 {
+  font-size: 1.5rem;
+}
+.features .col-4 {
+  font-size: 0.9rem;
 }
 
 /*# sourceMappingURL=style.css.map */
