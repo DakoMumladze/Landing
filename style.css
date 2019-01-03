@@ -9604,4 +9604,10 @@ footer .nav-link {
   color: #282828;
 }
 
+@media (max-width: 768px) {
+  .contact input {
+    margin-bottom: 3rem;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
