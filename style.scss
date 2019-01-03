@@ -33,9 +33,6 @@ $pb-10:10rem;
 .pb-10{
     padding-bottom: $pb-10;
 }
-.col-4{
-    width: calc(100%/3);
-}
 header{
     background:url(img/header.png);
     @include bg();
@@ -67,24 +64,6 @@ section{
     .d-flex{
         background: #ececec;
     }
-    .left{
-        background:#fff;
-        padding: 10% 15% 0 21%;
-    }
-    .right{
-        width: 100%;
-        position: relative;
-        .triangle{
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 0 0 20rem 35.7rem;
-            border-color: transparent transparent #fb8686 transparent;
-            position: absolute;
-            bottom: 0;
-            right: 0;                       
-        }
-    }
 }
 .features{
     background-color:#f6f5f3;
@@ -96,5 +75,25 @@ section{
     }
     .col-4{
         font-size: .9rem;
+    }
+}
+.partners{
+    background:url(img/bg.png) repeat top;
+    background-size: cover;
+    color:#fff;
+    img{
+        height: 5rem;
+    }
+}
+.contact{
+    background:#323969;
+    h2,button{
+        color:#fff;
+    }
+}
+footer{
+    .nav-link{
+        padding: 0.5rem 0;
+        color:#282828;
     }
 }
