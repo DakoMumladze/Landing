@@ -9603,7 +9603,48 @@ footer .nav-link {
   padding: 0.5rem 0;
   color: #282828;
 }
+input:invalid {
+  border-color: red;
+}
+input:valid {
+  border-color: green;
+}
+.outer-line {
+  width: 30px;
+  height: 50px;
+  border: solid #000 6px;
+  border-radius: 30px;
+  align-self: center;
+  margin: 80px auto;
+}
 
+.inner-line {
+  animation: mouse 1s ease 0.2s infinite;
+  width: 8px;
+  height: 13px;
+  background-color: #000;
+  border-radius: 30px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+body, html {
+  scroll-behavior: smooth;
+}
+@keyframes mouse {
+    0%   {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+
+    50% {
+      transform: translateY(10px);
+      opacity: 0.5;
+    }
+  
+    100% {
+      transform: translateY(0px);
+    }
+}
 @media (max-width: 1440px) {
   .features {
     background-position: left top, bottom center, bottom center;
